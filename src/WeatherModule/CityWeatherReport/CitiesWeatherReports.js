@@ -5,7 +5,7 @@ import React, {
 
 
 import CityWeather from './CityWeather';
-import './CitiesWeartherReport.css';
+import './CitiesWeartherReport.scss';
 
 function CitiesWeatherReport({allCities}) {
     

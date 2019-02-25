@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 
-
+import WeatherVisual from './WeatherVisual';
 
 
 function CityWeather({cityData}) {
@@ -113,7 +113,7 @@ function CityWeather({cityData}) {
             
                 <div className="columns">
                     <div className="column is-12">
-                        
+                        <WeatherVisual data={cityForecast.list} metric={tempUnit}/>
                     </div>
                 </div>
                 </React.Fragment>
