@@ -35,7 +35,7 @@ function CitySearch({onCitySelect}) {
     async function searchCities(query) {
         let data = [];
         try {
-            const response = await fetch(`http://api.openweathermap.org/data/2.5/find?q=${query}&type=like&sort=population&cnt=10&APPID=a6c98ebcf46fd073bf700219a88bd003`);
+            const response = await fetch(`https://api.openweathermap.org/data/2.5/find?q=${query}&type=like&sort=population&cnt=10&APPID=a6c98ebcf46fd073bf700219a88bd003`);
             data = await response.json();
             setMatchedCities(data.list);
             setServerError(false);

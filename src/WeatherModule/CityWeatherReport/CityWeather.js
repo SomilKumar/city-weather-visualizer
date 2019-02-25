@@ -58,7 +58,7 @@ function CityWeather({cityData}) {
 
     async function fetchCityForecast() {
         let data = [];
-        const forecastQuery = `http://api.openweathermap.org/data/2.5/forecast?id=${cityData.id}&units=${tempUnit}&APPID=a6c98ebcf46fd073bf700219a88bd003`;
+        const forecastQuery = `https://api.openweathermap.org/data/2.5/forecast?id=${cityData.id}&units=${tempUnit}&APPID=a6c98ebcf46fd073bf700219a88bd003`;
         try {
             const response = await fetch(forecastQuery);
             data = await response.json();
