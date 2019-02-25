@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 
-
+import CitySearch from './CitySearch/CitySearch';
 
 
 function WeatherPrediction() {
@@ -23,7 +23,7 @@ function WeatherPrediction() {
     
     return (
         <div>
-               
+            <CitySearch onCitySelect={onCitySelect}/>         
         </div>
     )
 }
