@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 
 import CitySearch from './CitySearch/CitySearch';
-
+import CitiesWeatherReport from './CityWeatherReport/CitiesWeatherReports'
 
 function WeatherPrediction() {
 
@@ -23,7 +23,8 @@ function WeatherPrediction() {
     
     return (
         <div>
-            <CitySearch onCitySelect={onCitySelect}/>         
+            <CitySearch onCitySelect={onCitySelect}/>
+           <CitiesWeatherReport allCities={cities}/>                
         </div>
     )
 }
